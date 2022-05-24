@@ -6,9 +6,8 @@ public class Main06 {
 		int[] arrayA = { 1, 2, 3 };
 		int[] arrayB;
 		arrayB = arrayA;
-		for (int value : scores) {
-		System.out.println(value);
-		}
+		arrayB[0] = 100;
+		System.out.println(arrayA[0]);
 	}
 
 }
