@@ -1,7 +1,6 @@
 package chap09;
 
 public class Hero {
-
 	String name;
 	int hp;
 
@@ -33,10 +32,18 @@ public class Hero {
 		System.out.println(this.name + "はねむった!");
 	}
 	
-//	コンストラクタ
+//	コンストラクタ(引数あり)
 //	newされたあとの自動実行メソッド
-	Hero() {
+	public Hero(String name) {
 		this.hp = 100;
+		this.name = name;
+	}
+
+//	コンストラクタ(引数なし)
+//	newされたあとの自動実行メソッド
+	public Hero() {
+		this.hp = 100;
+		this.name = "名もなき戦士";
 	}
 
 }
