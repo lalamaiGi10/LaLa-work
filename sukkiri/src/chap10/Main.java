@@ -28,6 +28,12 @@ public class Main {
 //		System.out.println("HP:" + cleric.hp + ", MP:" + cleric.mp);
 //		System.out.println("--------");
 
+//		
+		SuperHero sh = new SuperHero();
+		sh.run();
+		sh.fly();
+		System.out.println("--------");
+		
 //		ゆうしゃおでかけ
 //		hero.sit(5);
 //		hero.slip();

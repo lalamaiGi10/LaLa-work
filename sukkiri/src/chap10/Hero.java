@@ -22,13 +22,13 @@ public class Hero {
 //		System.out.println(this.name + "はその場で" + sec + "秒しゃがんだ!");
 //		System.out.println(this.name + "のHPが" + sec + "かいふくした!");
 //	}
-//
-//	void slip() {
-//		this.hp -= 5;
-//		System.out.println(this.name + "はころんでしまった!");
-//		System.out.println(this.name + "のHPが" + this.hp + "になった!");
-//	}
-//
+
+	final void slip() {
+		this.hp -= 5;
+		System.out.println(this.name + "はころんでしまった!");
+		System.out.println(this.name + "のHPが" + this.hp + "になった!");
+	}
+
 //	void sleep() {
 //		this.hp = 100;
 //		System.out.println(this.name + "はねむった!");

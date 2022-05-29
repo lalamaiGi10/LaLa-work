@@ -1,7 +1,7 @@
 package chap10;
 
-public class SuperHero {
-	String name = "みたこ";
+public class SuperHero extends Hero {
+//	String name = "みたこ";
 	int hp = 100;
 	boolean flying;
 
@@ -15,6 +15,16 @@ public class SuperHero {
 
 	void run() {
 		System.out.println(this.name + "はにげだした!");
+	}
+	
+	void fly() {
+		this.flying = true;
+		System.out.println("ちゅうにういた!");
+	}
+	
+	void lang() {
+		this.flying = false;
+		System.out.println("ちゃくちした!");
 	}
 
 //	void sit(int sec) {
