@@ -9,13 +9,13 @@ public class Main307 {
 		Hero mitakoHero = new Hero();
 		mitakoHero.name = "みたこ";
 		mitakoHero.hp = 100;
-		System.out.println("ゆうしゃ「"  + mitakoHero.name + "」とうじょう！！");
+		System.out.println("ゆうしゃ「" + mitakoHero.name + "」とうじょう！！");
 //		staticではthis使えない
-		
+
 //		おばキノ、生まれろ！！
 		Matango matango1 = new Matango();
 		matango1.suffix = 'A';
-		System.out.println(matango1.name + matango1.suffix +"があらわれた！！");
+		System.out.println(matango1.name + matango1.suffix + "があらわれた！！");
 //		勇者、たたけ！！
 //		おばキノ、逃げろ！！
 	}

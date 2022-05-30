@@ -49,6 +49,8 @@ public class Main {
 		matango1.run();
 		matango2.run();
 		hero.run();
+		sh.run();
+		sh.slip();
 		System.out.println("--------");
 		
 //		いろいろかいふく

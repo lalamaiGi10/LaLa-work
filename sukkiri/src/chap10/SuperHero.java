@@ -14,7 +14,7 @@ public class SuperHero extends Hero {
 	}
 
 	void run() {
-		System.out.println(this.name + "はにげだした!");
+		System.out.println(this.name + "はてったいした!");
 	}
 	
 	void fly() {
@@ -22,7 +22,7 @@ public class SuperHero extends Hero {
 		System.out.println("ちゅうにういた!");
 	}
 	
-	void lang() {
+	void land() {
 		this.flying = false;
 		System.out.println("ちゃくちした!");
 	}
