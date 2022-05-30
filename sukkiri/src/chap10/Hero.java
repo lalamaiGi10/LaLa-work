@@ -13,7 +13,7 @@ public class Hero {
 	System.out.println("モンスターに5のダメージ!");
 	}
 
-	void run() {
+	public void run() {
 		System.out.println(this.name + "はにげだした!");
 	}
 
@@ -23,7 +23,7 @@ public class Hero {
 //		System.out.println(this.name + "のHPが" + sec + "かいふくした!");
 //	}
 
-	final void slip() {
+	public final void slip() {
 		this.hp -= 5;
 		System.out.println(this.name + "はころんでしまった!");
 		System.out.println(this.name + "のHPが" + this.hp + "になった!");

@@ -4,29 +4,36 @@ public class SuperHero extends Hero {
 //	String name = "みたこ";
 	int hp = 100;
 	boolean flying;
-
-//	Sword sword;
 	
-	void attack(Matango matango) {
-	System.out.println(this.name + "のこうげき!");
-	matango.hp = -5;
-	System.out.println("モンスターに5のダメージ!");
-	}
-
-	void run() {
-		System.out.println(this.name + "はてったいした!");
-	}
-	
-	void fly() {
+	public void fly() {
 		this.flying = true;
 		System.out.println("ちゅうにういた!");
 	}
 	
-	void land() {
+	public void land() {
 		this.flying = false;
 		System.out.println("ちゃくちした!");
 	}
 
+	public void run() {
+		System.out.println(this.name + "はてったいした!");
+	}
+	
+	//	Sword sword;
+	
+	public void attack(Matango matango) {
+	System.out.println(this.name + "のこうげき!");
+	matango.hp = -5;
+	System.out.println("モンスターに5のダメージ!");
+	if (this.flying) {
+		System.out.println(this.name + "のこうげき！！");
+		matango.hp -= 5;
+		System.out.println("さらに5のダメージ！！");
+	}
+	}
+
+
+	
 //	void sit(int sec) {
 //		this.hp += sec;
 //		System.out.println(this.name + "はその場で" + sec + "秒しゃがんだ!");
