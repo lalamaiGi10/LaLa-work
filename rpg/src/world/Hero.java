@@ -2,11 +2,11 @@ package world;
 
 public class Hero {// ←クラスブロック
 
-	public String name;// このとき初期値はnullで入っている
-//	ほかのパッケージにも見えるようにするため(パッケージまたぎで使うとき)
-	public int hp;// このとき初期値は0で入っている
+	public String name = "みなと";// public String name;のとき初期値はnullで入っている
+//	public String name;にするのはほかのパッケージにも見えるようにするため(パッケージまたぎで使うとき)
+	public int hp = 100;
+//	public int hp;// このとき初期値は0で入っている
 
-	
 	public Hero () {}
 	public Hero (String name) {
 		this.name = name;
