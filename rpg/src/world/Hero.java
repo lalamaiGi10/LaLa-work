@@ -1,25 +1,23 @@
 package world;
 
-public class Hero {// ←クラスブロック
-
-	public String name = "みなと";// public String name;のとき初期値はnullで入っている
-//	public String name;にするのはほかのパッケージにも見えるようにするため(パッケージまたぎで使うとき)
-	public int hp = 100;
-//	public int hp;// このとき初期値は0で入っている
-
-	public Hero () {}
-	public Hero (String name) {
-		this.name = name;
+public class Hero extends Character {
+	// public String name;
+	
+	public Hero() {
+		System.out.println("Heroのコンストラクタが動作");
+	}
+	public Hero(String name) {
+		super(name);
+		// this.name = name;
 	}
 	
 	public void attack(Matango m) {
-		System.out.println(this.name + "のこうげき！！");
-		m.hp -= 5;
-		System.out.println("5のダメージ");
-	}// メソッドブロック
-
+		System.out.println(this.name + "の攻撃!");
+		m.hp = m.hp - 5;
+		System.out.println("敵に5ポイントのダメージを与えた。");
+	}
 
 	public void run() {
-		System.out.println(this.name + "はにげだした！！");
+		System.out.println(this.name + "は、逃げ出した");
 	}
-}// ←クラスブロックの終わり
+}

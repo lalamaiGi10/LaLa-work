@@ -6,17 +6,17 @@ import world.Sword;
 public class Main343 {
 
 	public static void main(String[] args) {
-		Sword fireSword = new Sword();
-		fireSword.name = "ほのおのつるぎ";
-		fireSword.damage = 10;
-
-		Hero mitakoHero = new Hero();
-		mitakoHero.name = "みたこ";
-		mitakoHero.hp = 100;
-		mitakoHero.sword = fireSword;
-		System.out.println(mitakoHero.name + "は" + mitakoHero.sword.name + "をそうびした！！");
-	
-	mitakoHero.attack();
+		Sword s = new Sword();
+		s.name = "炎の剣";
+		s.damage = 10;
+		
+		Hero h = new Hero();
+		h.name = "ミナト";
+		h.hp = 100;
+		// h.sword = s;
+		// System.out.println("現在の武器は" + h.sword.name);
+		
+		// h.attack();
 	}
 
 }

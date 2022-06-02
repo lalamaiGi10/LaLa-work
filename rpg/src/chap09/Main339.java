@@ -9,10 +9,10 @@ public class Main339 {
 		h1 = new Hero();
 		h1.hp = 100;
 		
-		Hero h2;
-		h2 = h1; // 参照(address情報を代入)
+		Hero h2 = new Hero();
+		h2 = h1;    // 参照(アドレス情報)を代入
 		h2.hp = 200;
-
+		
 		System.out.println(h1.hp);
 	}
 

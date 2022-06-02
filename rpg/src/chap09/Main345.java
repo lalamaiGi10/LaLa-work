@@ -6,18 +6,20 @@ import world.Wizard;
 public class Main345 {
 
 	public static void main(String[] args) {
-		Hero mitakoHero = new Hero();
-		mitakoHero.name = "みたこ";
-		mitakoHero.hp = 100;
-				
-		mitakoHero.slip();
-
+		Hero h1 = new Hero();
+		h1.name = "ミナト";
+		h1.hp = 100;
 		
-		Wizard mamanoWizard = new Wizard();
-		mamanoWizard.name = "ままの";
-		mamanoWizard.hp = 120;
+		Hero h2 = new Hero();
+		h2.name = "アサカ";
+		h2.hp = 100;
 		
-		mamanoWizard.heal(mitakoHero);
+		Wizard w = new Wizard();
+		w.name = "スガワラ";
+		w.hp = 50;
+		w.heal(h1);
+		w.heal(h2);
+		w.heal(h2);
 	}
 
 }

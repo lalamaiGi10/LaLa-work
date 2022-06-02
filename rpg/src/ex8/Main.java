@@ -5,11 +5,9 @@ import world.Cleric;
 public class Main {
 
 	public static void main(String[] args) {
-		Cleric nukCleric = new Cleric();
-		nukCleric.name = "ぬっく";
-		
-		nukCleric.selfAid();
-		nukCleric.pray(2);
+		Cleric cleric = new Cleric();
+		cleric.selfAid();
+		cleric.pray(5);
 	}
 
 }
