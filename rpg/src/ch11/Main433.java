@@ -27,10 +27,10 @@ public class Main433 {
 		*/
 		
 		Hero h = new Hero("田中");
-		h.sleep();
+//		h.sleep();
 		
 		SuperHero sh = new SuperHero("まえだ");
-		sh.sleep();
+//		sh.sleep();
 	}
 
 }
