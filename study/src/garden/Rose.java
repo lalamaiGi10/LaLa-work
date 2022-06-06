@@ -11,10 +11,11 @@ public class Rose extends Flower {
 	
 //	親フィールドに名前を設定する
 	public Rose(String name) {
+//		this.name = name;
 		super(name);
 	}
 	
 	public void smell () {
-		System.out.println(this.name + "はいい香りがする。");
+		System.out.println(this.getName() + "はいい香りがする。");
 	}
 }
