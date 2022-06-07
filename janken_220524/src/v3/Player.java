@@ -4,14 +4,13 @@ public abstract class Player {
 	private String name;
 	private int hand;
 	private String result;
-//	次の手を決める戦略(インターフェイス)
+	// 次の手を決める戦略の型(インターフェース)
 	private NextHand nextHand;
 	
 	public Player(NextHand nextHand) {
 		this.nextHand = nextHand;
 	}
 	
-//	デバッグモードでよく使う
 	public String toString() {
 		return this.name + ":" + this.hand + ":" + this.result;
 	}
@@ -29,7 +28,7 @@ public abstract class Player {
 	}
 
 	public void setHand() {
-		this.hand = nextHand.decideHand();
+		this.hand = this.nextHand.decideHand();
 	}
 
 	public String getResult() {
@@ -47,5 +46,4 @@ public abstract class Player {
 	public void setNextHand(NextHand nextHand) {
 		this.nextHand = nextHand;
 	}
-	
 }
